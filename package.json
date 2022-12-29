@@ -1,0 +1,47 @@
+{
+  "name": "practice-tool-app",
+  "version": "1.0.0",
+  "description": "Allows practice tool to make up to team size of 5",
+  "main": "dist/main.js",
+  "author": "Jomariel Gaitera <gaiterajomariel@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc && electron-builder",
+    "start": "tsc && electron .",
+    "tw": "postcss style/tailwind.css -o style/style.css"
+  },
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.5.3",
+    "@typescript-eslint/eslint-plugin": "^5.47.1",
+    "@typescript-eslint/parser": "^5.47.1",
+    "autoprefixer": "^10.4.13",
+    "electron": "^22.0.0",
+    "electron-builder": "^23.6.0",
+    "eslint": "^8.30.0",
+    "postcss": "^8.4.20",
+    "postcss-cli": "^10.1.0",
+    "prettier": "^2.8.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4"
+  },
+  "dependencies": {
+    "league-connect": "^6.0.0-rc9"
+  },
+  "build": {
+    "appId": "com.lolpracticetool.app",
+    "productName": "LoL practice tool maker",
+    "target": "NSIS",
+    "directories": {
+      "output": "build"
+    },
+    "win": {
+      "target": "nsis",
+      "requestedExecutionLevel": "requireAdministrator"
+    },
+    "nsis": {
+      "guid": "58dd5b97-7663-424e-a94f-c5b078d91c3d",
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    }
+  }
+}
