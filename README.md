@@ -4,7 +4,7 @@ This application allows the user to add more bots to the practice tool which onl
 
 ## Installation
 
-- [Click here to download](#)
+- [Click here to download](https://github.com/jmrl23/league-practice-tool/releases/download/Installer/LoL.practice.tool.maker.Setup.1.0.0.exe)
 
 ## Usage (after installing)
 
